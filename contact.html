@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GFAB Ltd.</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/formvalidation.js"></script>
+    <script src="scripts/temp.js"></script>
+</head>
+
+<body>
+    <div class="grid call contactMain">
+        <div class="cell contactForm">
+            <form name='frm' onsubmit="return validateForm();">
+                <label for="firstName">First Name <small>(required)</small></label>
+                <input type="text" id="firstName" name="firstname" placeholder="e.g. Tony">
+
+                <label for="lastName">Last Name <small>(required)</small></label>
+                <input type="text" id="lastName" name="lastname" placeholder="e.g. Stark">
+
+                <label for="conpanyName">Company Name</label>
+                <input type="text" id="companyName" name="companyname" placeholder="e.g. Stark Industries Ltd.">
+
+                <label for="email">Email Address <small>(required)</small></label>
+                <input type="email" id="email" name="email" placeholder="e.g. pepperony@shield.com" pattern=".@.*\..">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="write something...">
+
+                <label for="message">Message <small>(required)</small></label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+        <div class="cell contactInfo">
+            <div class="cell heading">Contact Info</div>
+            <div class="cell info">
+                <p><u>Admin</u><br>
+                    Email - sales@gfab.co.nz<br>
+                    Phone - 07 543 0728</p>
+                <p><u>Danny (owner)</u><br>
+                    Email - danny@gfab.co.nz<br>
+                    Phone - 021 777 591</p>
+                <br>
+                <p>
+                    <u>Address</u><br>
+                    33 Maleme Street<br>
+                    Greerton<br>
+                    Tauranga
+                </p>
+                <a href="images/map.png">
+                    <div class="cell map">
+                        <img src="images/map.png" alt="map">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        Call();
+    </script>
+</body>
+
+</html>
